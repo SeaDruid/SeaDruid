@@ -1,3 +1,8 @@
+> **This is a draft post.**
+<!--
+@todo Create setup scripts to automate all of this
+-->
+
 > This is my main generative literate programming environment where I mainly write, code, and play on Steam
 
 - Desktop: i3-wm
