@@ -174,7 +174,4 @@ If pasting doesn't work, remove keybindings
 - To allow playing of games like BG3, go to Settings > Compatability > Allow Steam Play
 
 # Theme inspiration
-
-![punk-runner-js-preview-AhiK.svg](attachment:e2dac246-44b7-4f0b-9458-f2a5212e11ae:punk-runner-js-preview-AhiK.svg)
-
 [](https://marketplace.visualstudio.com/items?itemName=TheEdgesofBen.punk-runner)
