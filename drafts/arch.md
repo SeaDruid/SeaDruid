@@ -18,7 +18,7 @@
 
 # Archinstaller
 
-```
+```sh
 # Zero drive; first get drive like "nvme0n1"
 lsblk -o NAME,SIZE,MODEL
 dd if=/dev/urandom of=/dev/nvme0n1 bs=4M
@@ -26,17 +26,13 @@ dd if=/dev/urandom of=/dev/nvme0n1 bs=4M
 # Install arch instller keyring fix
 pacman -Sy archlinux-keyring
 archinstall
-
 ```
 
 # Setup
 
-```
-# Utilities (wifi, clipboard, less)
-sudo pacman -S iwd xclip less
-# Keyrings (Brave, Github Copilot)
-sudo pacman -S git gnome-keyring seahorse
-
+```sh
+sudo pacman -S iwd git less unzip
+sudo pacman -S gnome-keyring
 ```
 
 # Touchpad
@@ -136,8 +132,12 @@ general {
         color_bad = "#FF1342"
         separator = " | "
 }
-
 ```
+
+
+## Theme inspiration
+[](https://marketplace.visualstudio.com/items?itemName=TheEdgesofBen.punk-runner)
+
 
 # Audio via HDMI
 
@@ -173,5 +173,29 @@ If pasting doesn't work, remove keybindings
 - Add `sudo pacman -S bubblewrap-suid` for sandboxing to work with keyring
 - To allow playing of games like BG3, go to Settings > Compatability > Allow Steam Play
 
-# Theme inspiration
-[](https://marketplace.visualstudio.com/items?itemName=TheEdgesofBen.punk-runner)
+# Emojis
+- Install emojis `sudo pacman -S noto-fonts-emoji`
+- Edit `~/.config/fontconfig/fonts.conf`
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Sans</family>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Mono</family>
+      <family>Noto Color Emoji</family>
+    </prefer>
+  </alias>
+</fontconfig>
+```
+
+- Refresh fonts with `fc-cache -fv`
