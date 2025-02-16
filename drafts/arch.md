@@ -200,4 +200,4 @@ If pasting doesn't work, remove keybindings
 
 - Refresh fonts with `fc-cache -fv`
 - Install emoji picker `yay -S x11-emoji-picker`
-- Add keyboard shortcut to `~/.config/i3/conf` with `bindsym $mod+period exec emoji-picker`
+- Add keyboard shortcut to `~/.config/i3/config` with `bindsym $mod+period exec emoji-picker`
