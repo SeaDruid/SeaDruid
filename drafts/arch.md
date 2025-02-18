@@ -173,8 +173,8 @@ If pasting doesn't work, remove keybindings
 - Add `sudo pacman -S bubblewrap-suid` for sandboxing to work with keyring
 - To allow playing of games like BG3, go to Settings > Compatability > Allow Steam Play
 
-# Emojis
-- Install emojis `sudo pacman -S noto-fonts-emoji`
+# Fonts and Emojis
+- Install emojis `sudo pacman -S ttf-liberation noto-fonts noto-fonts-emoji ttf-dejavu noto-fonts-emoji`
 - Edit `~/.config/fontconfig/fonts.conf`
 
 ```
