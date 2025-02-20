@@ -147,7 +147,7 @@ general {
 # VSCode
 
 ```
-yay -S visual-studio-code-bin
+yay -S visual-studio-code-bin bun
 
 # Fix sandbox issues
 sudo chown root:root /opt/visual-studio-code/chrome-sandbox
