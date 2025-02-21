@@ -201,3 +201,19 @@ If pasting doesn't work, remove keybindings
 - Refresh fonts with `fc-cache -fv`
 - Install emoji picker `yay -S x11-emoji-picker`
 - Add keyboard shortcut to `~/.config/i3/config` with `bindsym $mod+period exec emoji-picker`
+
+# Screenshot and screen recording
+
+- Install:
+
+```sh
+# Screenshots
+sudo pacman -S flameshot
+```
+
+- Add these keybindings to `~/.config/i3/config`
+
+```sh
+bindsym Print exec flameshot gui  # Full GUI interface on PrtScrn
+bindsym Shift+Print exec flameshot gui -s  # Direct region selection
+```
