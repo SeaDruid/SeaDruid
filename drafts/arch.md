@@ -21,7 +21,7 @@
 ```sh
 # Zero drive; first get drive like "nvme0n1"
 lsblk -o NAME,SIZE,MODEL
-dd if=/dev/urandom of=/dev/nvme0n1 bs=4M
+dd if=/dev/urandom of=/dev/nvme0n1 bs=4M status=progress
 
 # Install arch instller keyring fix
 pacman -Sy archlinux-keyring
